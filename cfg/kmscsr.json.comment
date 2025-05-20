@@ -1,0 +1,17 @@
+// kmscsr.json 設定ファイルの説明
+
+{
+  // AWS KMSキーのARN。形式: arn:aws:kms:リージョン:アカウントID:key/キーID
+  "aws_key_arn": "arn:aws:kms:your-aws-region:012345678901:key/your-key-id",
+  
+  // AWS KMSキー仕様。現在はECC_NIST_P256のみサポート
+  "aws_key_spec": "ECC_NIST_P256",
+  
+  // 証明書のコモンネーム（Common Name）。通常はドメイン名など
+  "cert_common_name": "examplecorp.com",
+  
+  // 証明書の国コード（2文字のISO国コード）
+  "cert_country_code": "US"
+}
+
+// 注意: このファイルは説明用です。実際のJSONファイルではコメントは使用できません。
